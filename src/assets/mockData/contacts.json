@@ -5,35 +5,35 @@
       "lastName": "Agrawal",
       "email": "nagrawal940@gmail.com",
       "phoneNo": "9730433886",
-      "status": "active"
+      "status": "Active"
     },
     {
       "firstName": "Amit",
       "lastName": "Mehta",
       "email": "mehtaamit@gmail.com",
       "phoneNo": "9999999999",
-      "status": "inactive"
+      "status": "Inactive"
     },
     {
       "firstName": "Anurag",
       "lastName": "Dikondwar",
       "email": "Anudikond@gmail.com",
       "phoneNo": "8983708404",
-      "status": "active"
+      "status": "Active"
     },
     {
       "firstName": "Yogesh",
       "lastName": "Sevak",
       "email": "yogiseva@gmail.com",
       "phoneNo": "9373651403",
-      "status": "active"
+      "status": "Active"
     },
     {
       "firstName": "Rakesh",
       "lastName": "Agrawal",
       "email": "rockyagrawal@gmail.com",
       "phoneNo": "8888888888",
-      "status": "active"
+      "status": "Active"
     }
   ]
 }

@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {HttpClientModule} from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { DataTablesModule } from 'angular-datatables';
 import { AppComponent } from './app.component';
@@ -13,7 +14,8 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     HttpClientModule,
-    DataTablesModule
+    DataTablesModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
