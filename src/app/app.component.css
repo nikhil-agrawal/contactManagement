@@ -1,0 +1,21 @@
+
+header{
+    border-bottom: 1px solid;
+    padding: 10px;
+    margin-bottom: 20px
+}
+
+.contact-form{
+    border-bottom: 1px solid;
+    padding: 10px;
+}
+
+.contact-form-btns{
+    margin-left: 47%;
+}
+
+.contacts-table{
+    border-bottom: 1px solid;
+    padding: 20px;
+    margin-bottom: 50px 
+}

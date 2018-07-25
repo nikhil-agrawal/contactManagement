@@ -30,7 +30,7 @@ export class AppComponent implements OnDestroy, OnInit {
         'firstName': ['', Validators.required],
         'lastName': ['', Validators.required],
         'email': ['', [Validators.required]],
-        'phoneNo': ['', Validators.required],
+        'phoneNo': ['',Validators.required],
         'status': ['Active']
       });
      }
@@ -45,6 +45,15 @@ export class AppComponent implements OnDestroy, OnInit {
 
   ngOnDestroy(): void {
     this.dtTrigger.unsubscribe();
+  }
+
+  public validatePhoneNo(event: any) {
+    const pattern = /[0-9\+\-\ ]/;
+
+    let inputChar = String.fromCharCode(event.charCode);
+    if (event.keyCode != 8 && !pattern.test(inputChar)) {
+      event.preventDefault();
+    }
   }
 
   public addContact(): void {
