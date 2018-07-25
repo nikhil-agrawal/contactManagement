@@ -3,6 +3,7 @@ import { FormBuilder, Validators } from '@angular/forms';
 import {ContactsService} from './services/contacts.service';
 import { Subject } from 'rxjs';
 import { DataTableDirective } from 'angular-datatables';
+import {Contact} from './model/contact';
 
 @Component({
   selector: 'app-root',
@@ -14,7 +15,7 @@ export class AppComponent implements OnDestroy, OnInit {
 
   @ViewChild(DataTableDirective)
   public dtElement: DataTableDirective;
-  public contacts: any = [];
+  public contacts: Contact[] = [];
   public dtOptions: DataTables.Settings = {
     stateSave: true
   };
@@ -38,7 +39,7 @@ export class AppComponent implements OnDestroy, OnInit {
   
   ngOnInit() {
     this.contactService.getContacts().then( (resp) => {
-      this.contacts = resp.contacts;
+      this.contacts = resp;
       this.dtTrigger.next();
     });
   }

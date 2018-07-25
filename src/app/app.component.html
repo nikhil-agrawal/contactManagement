@@ -49,6 +49,8 @@
     <div class="contact-form-btns">
         <button type="submit" class="btn btn-primary" *ngIf="!isEdit"
         [disabled]="!contactForm.valid">Submit</button>
+        <button type="button"
+         class="btn btn-primary" *ngIf="!isEdit" (click)="clearForm()">Clear</button>
   
         <button type="button" class="btn btn-primary" *ngIf="isEdit"
         [disabled]="!contactForm.valid" (click)="updateContact()">Update</button>
